@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <Component id="jPanel1" min="-2" pref="962" max="-2" attributes="0"/>
+              <EmptySpace min="0" pref="12" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="jPanel1" min="-2" pref="800" max="-2" attributes="0"/>
+              <EmptySpace max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Container class="javax.swing.JPanel" name="jPanel1">
+      <Properties>
+        <Property name="preferredSize" type="java.awt.Dimension" editor="org.netbeans.beaninfo.editors.DimensionEditor">
+          <Dimension value="[1080, 1300]"/>
+        </Property>
+      </Properties>
+      <AuxValues>
+        <AuxValue name="JavaCodeGenerator_CreateCodeCustom" type="java.lang.String" value="new javax.swing.JPanel()&#xa;{&#xa;&#xa;    public void paintComponent(Graphics g)&#xa;    {&#xa;        g.drawImage(map.getImage(), map.left, map.bottom, null);&#xa;        for (int i = 0; i &lt; listeVoitures.size(); i++) {&#xa;            g.drawImage(listeVoitures.get(i).getImage(), listeVoitures.get(i).left, listeVoitures.get(i).y, null);&#xa;            if(drawHitboxes){&#xa;                Rectangle hitbox = listeVoitures.get(i).getHitbox();&#xa;                g.drawRect((int)hitbox.getX(),(int) hitbox.getY(),(int) hitbox.getWidth(),(int) hitbox.getHeight());&#xa;            }&#xa;        }&#xa;        for (int i = 0; i &lt; listeBuches.size(); i++) {&#xa;            g.drawImage(listeBuches.get(i).getImage(), listeBuches.get(i).left, listeBuches.get(i).y, null);&#xa;            if(drawHitboxes){&#xa;                Rectangle hitbox = listeBuches.get(i).getHitbox();&#xa;                g.drawRect((int)hitbox.getX(),(int) hitbox.getY(),(int) hitbox.getWidth(),(int) hitbox.getHeight());&#xa;            }&#xa;        }&#xa;        g.drawImage(perso.getImage(), perso.left, perso.y, null);&#xa;        if(drawHitboxes){&#xa;            Rectangle hitbox = perso.getHitbox();&#xa;            g.drawRect((int)hitbox.getX(),(int) hitbox.getY(),(int) hitbox.getWidth(),(int) hitbox.getHeight());&#xa;        }&#xa;    }&#xa;&#xa;}"/>
+      </AuxValues>
+
+      <Layout>
+        <DimensionLayout dim="0">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="962" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+        <DimensionLayout dim="1">
+          <Group type="103" groupAlignment="0" attributes="0">
+              <EmptySpace min="0" pref="800" max="32767" attributes="0"/>
+          </Group>
+        </DimensionLayout>
+      </Layout>
+    </Container>
+  </SubComponents>
+</Form>
