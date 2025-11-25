@@ -1,4 +1,4 @@
-# Jeu Frogger en Java - Projet étudiant
+# Frogger - Jeu Java (POO)
 
 Petit jeu développé en Java dans le cadre de ma formation d'ingénieure.
 
