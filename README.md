@@ -10,13 +10,14 @@ Fonctionnalités:
 - Interface simple 
 - Architecture orientée (objet)
 
-Aperçu :
-<img width="1043" height="1081" alt="image" src="https://github.com/user-attachments/assets/7dfafd21-9e1f-4ad9-b09a-d7c0e367b696" />
-
-Objectifs et compétences développées:
+Objectifs pédagogiques:
 - Structurer un projet Java
 - Pratiquer la POO (Programmation orientée objet)
 - Utiliser une interface graphique
+
+Aperçu :
+
+<img width="1043" height="1081" alt="image" src="https://github.com/user-attachments/assets/7dfafd21-9e1f-4ad9-b09a-d7c0e367b696" />
 
 Développé par Chloé Liébeaux, Etudiante ingénieure - EPF 
 Linkedin : chloé-liébeaux
